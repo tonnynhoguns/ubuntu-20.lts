@@ -1,0 +1,19 @@
+# Autor: 
+#
+# Configuração da Interface de Rede que o ISC DHCP Server irá escutar as solicitações
+# de endereçamento IPv4
+INTERFACESv4="enp0s3"
+#INTERFACESv6=""
+#
+# Localização do caminho padrão do arquivo de configuração do ISC DHCP Server
+DHCPDv4_CONF=/etc/dhcp/dhcpd.conf
+#DHCPDv6_CONF=/etc/dhcp/dhcpd6.conf
+#
+# Localização do caminho padrão do PID do processo do ISC DHCP Server
+DHCPDv4_PID=/var/run/dhcpd.pid
+#DHCPDv6_PID=/var/run/dhcpd6.pid
+#
+# Opções adicionais do serviço do ISC DHCP Sever
+# Não use as opções -cf ou -pf aqui; use DHCPD_CONF/ DHCPD_PID em vez disso
+#OPTIONS=""
+

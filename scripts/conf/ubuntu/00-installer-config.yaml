@@ -1,0 +1,16 @@
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp0s3:
+      addresses:
+        - 192.168.56.11/24
+      gateway4: 10.0.3.15
+      nameservers:
+        addresses:
+          - 8.8.8.8
+          - 8.8.4.4
+        search:
+          - ajas.local
+    enp0s8:
+      dhcp4: true
+  version: 2
