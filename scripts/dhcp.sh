@@ -2,7 +2,7 @@
 echo -e "Instalando o ISC DHCP Server, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
-	apt -y install $DHCPINSTALL &>> $LOG
+	apt install isc-dhcp-server
 echo -e "ISC DHCP Server instalado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
@@ -12,11 +12,11 @@ echo -e "Atualizando os arquivos de configuração do ISC DHCP Server, aguarde..
 	# opção do comando mv: -v (verbose)
 	# opção do comando cp: -v (verbose)
 	# opção do comando wget: -P (directory-prefix)
-	mv -v /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.old &>> $LOG
-	mv -v /etc/default/isc-dhcp-server /etc/default/isc-dhcp-server.old &>> $LOG
-	cp -v conf/dhcp/dhcpd.conf /etc/dhcp/ &>> $LOG
-	cp -v conf/dhcp/isc-dhcp-server /etc/default/ &>> $LOG
-	wget $OUI -P /usr/local/etc/ &>> $LOG
+	mv -v /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.old
+	mv -v /etc/default/isc-dhcp-server /etc/default/isc-dhcp-server.old
+	cp -v conf/dhcp/dhcpd.conf /etc/dhcp/
+	cp -v conf/dhcp/isc-dhcp-server /etc/default/
+	wget $OUI -P /usr/local/etc/
 echo -e "Arquivos atualizados com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
