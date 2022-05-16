@@ -1,0 +1,6 @@
+# Desabilitar o suporte ao Resolvconf
+RESOLVCONF=no
+#
+# Opções de inicialização do serviço do Bind9 DNS Server
+# opções do options: -u (user), -4 (ipv4)
+OPTIONS="-u bind -4"

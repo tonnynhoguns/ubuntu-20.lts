@@ -1,0 +1,13 @@
+# Rotacionando os Logs das Estatísticas do RNDC Stats do Bind DNS Server utilizadas
+# pelo sistema de monitoramento Netdata
+/var/log/named/named.stats {
+	daily
+	rotate 4
+	compress
+	delaycompress
+	create 0644 bind bind
+	missingok
+	postrotate
+	rndc reload > /dev/null
+	endscript
+}

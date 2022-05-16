@@ -1,0 +1,42 @@
+$ORIGIN example.com.
+$TTL 3600 ; 1 hour
+@		IN		SOA		svr001.example.com. ajas.example.com. (
+				1 ; serial
+				604800 ; refresh (1 week)
+				86400 ; retry (1 day)
+				2419200 ; expire (4 weeks)
+				604800 ; minimum (1 week)
+				)
+;
+@               IN 		NS		svr001.example.com.
+@               IN 		MX		10 mail
+@               IN		TXT		"v=spf1 a mx -all"
+;
+example.com.    IN 		A 		192.168.56.11
+svr001          IN 		A		192.168.56.11
+svr-fw01        IN 		A		192.168.56.254
+mail            IN 		A 		192.168.56.11
+;
+cloud           IN		CNAME	svr001
+ftp             IN		CNAME	svr001
+glpi            IN		CNAME	svr001
+imap4           IN		CNAME	svr001
+imap            IN		CNAME	svr001
+loganalyzer     IN		CNAME	svr001
+log             IN		CNAME	svr001
+mysql           IN		CNAME	svr001
+next            IN		CNAME	svr001
+nfs             IN		CNAME	svr001
+ntp             IN		CNAME	svr001
+own             IN		CNAME	svr001
+pop3            IN		CNAME	svr001
+portal          IN		CNAME	svr001
+pxe             IN		CNAME	svr001
+smtp            IN		CNAME	svr001
+ssh             IN		CNAME	svr001
+tftp            IN		CNAME	svr001
+webdav          IN		CNAME	svr001
+wpad            IN		CNAME	svr001
+wp              IN		CNAME	svr001
+www             IN		CNAME	svr001
+zm              IN		CNAME	svr001

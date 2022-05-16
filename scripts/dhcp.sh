@@ -5,6 +5,8 @@ echo -e "Instalando o ISC DHCP Server, aguarde..."
 	apt install isc-dhcp-server
 echo -e "ISC DHCP Server instalado com sucesso!!!, continuando com o script...\n"
 sleep 5
+echo -e "Adicionando o serviço para reiniciar com o sistema"
+	systemctl enable isc-dhcp-server
 #
 #
 echo -e "Atualizando os arquivos de configuração do ISC DHCP Server, aguarde..."
