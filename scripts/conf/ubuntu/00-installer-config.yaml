@@ -10,7 +10,7 @@ network:
           - 8.8.8.8
           - 8.8.4.4
         search:
-          - ajas.local
+          - example.com
     enp0s8:
       dhcp4: true
   version: 2

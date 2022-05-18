@@ -9,7 +9,7 @@ zone "." {
 // conforme RFC 1912
 
 // Zona de Pesquisa Direta de Localhost
-zone "localhost" {
+zone "example.com" {
 	type master;
 	file "/etc/bind/db.local";
 };

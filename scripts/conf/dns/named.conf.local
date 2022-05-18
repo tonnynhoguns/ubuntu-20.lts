@@ -13,7 +13,7 @@ key "rndc-key" {
 // Configuração de Zona de Pesquisa Direta do Bind9 DNS Server
 zone "example.com" IN {
 	type master;
-	file "/var/lib/bind/pti.intra.hosts";
+	file "/var/lib/bind/example.com.hosts";
 	allow-update { key rndc-key; };
 	allow-query { any; };
 	allow-transfer { none; };
